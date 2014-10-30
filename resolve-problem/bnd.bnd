@@ -1,0 +1,10 @@
+-buildpath:  \
+	osgi.core,\
+	osgi.cmpn,\
+	biz.aQute.bnd.annotation,\
+	org.apache.felix.http.jetty
+Bundle-Version: 0.0.0.${tstamp}
+Service-Component:  \
+	*
+Private-Package:  \
+	hello

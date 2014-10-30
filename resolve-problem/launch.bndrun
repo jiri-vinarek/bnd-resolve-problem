@@ -1,0 +1,18 @@
+-runfw: org.eclipse.osgi;version='[3.10.1.v20140909-1633,3.10.1.v20140909-1633]'
+-runee: JavaSE-1.7
+-runsystemcapabilities: ${native_capability}
+
+-resolve.effective: active
+
+-runbundles:  \
+	javax.servlet;version='[2.5.0,2.5.1)',\
+	org.apache.felix.configadmin;version='[1.8.0,1.8.1)',\
+	org.apache.felix.http.jetty;version='[2.2.0,2.2.1)',\
+	org.apache.felix.http.whiteboard;version='[2.2.2,2.2.3)',\
+	org.apache.felix.scr;version='[1.6.2,1.6.3)',\
+	resolve-problem;version=latest
+
+-runrequires:  \
+	osgi.identity;filter:='(osgi.identity=resolve-problem)',\
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.http.whiteboard)',\
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.http.jetty)',\
