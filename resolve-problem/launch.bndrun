@@ -16,3 +16,4 @@
 	osgi.identity;filter:='(osgi.identity=resolve-problem)',\
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.http.whiteboard)',\
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.http.jetty)',\
+	osgi.identity;filter:='(osgi.identity=org.eclipse.osgi)'
